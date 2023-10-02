@@ -33,13 +33,12 @@ Para começar, você vai precisar acessar o site <https://bibliotecavirtual.com.
 As seguintes ferramentas foram usadas na construção do projeto:
 
 - Java
-- html
 
 ### Autores
 
 - [Andre Ferraz](https://github.com/AndreFerrazzzz)
 - [Bruno Martins](https://github.com/Bruno-Mrs)
-- [Ereon Moraes](https://github.com/eronmoraes)
+- [Eron Moraes](https://github.com/eronmoraes)
 - [Vinicius Câmara](https://github.com/VinicinCamara)
 
 
