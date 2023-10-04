@@ -1,26 +1,38 @@
 public class Produto {
-    private int id;
+    private int idProduto;
     private String nome;
     private String descricao;
     private double preco;
-    private int quantidadeEmEstoque;
+    private int estoque;
     private String categoria;
+    private String editora;
 
-    public Produto(int id, String nome, String descricao, double preco, int quantidadeEmEstoque, String categoria) {
-        this.id = id;
+    public Produto() {
+        this.idProduto = 0;
+        this.nome = "";
+        this.descricao = "";
+        this.preco = 0;
+        this.estoque = 0;
+        this.categoria = "";
+        this.editora = "";
+    }
+
+    public Produto(int idProduto, String nome, String descricao, double preco, int estoque, String categoria, String editora) {
+        this.idProduto = idProduto;
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
-        this.quantidadeEmEstoque = quantidadeEmEstoque;
+        this.estoque = estoque;
         this.categoria = categoria;
+        this.editora = editora;
     }
 
-    public int getId() {
-        return id;
+    public int getIdProduto() {
+        return idProduto;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdProduto(int idProduto) {
+        this.idProduto = idProduto;
     }
 
     public String getNome() {
@@ -47,12 +59,12 @@ public class Produto {
         this.preco = preco;
     }
 
-    public int getQuantidadeEmEstoque() {
-        return quantidadeEmEstoque;
+    public int getEstoque() {
+        return estoque;
     }
 
-    public void setQuantidadeEmEstoque(int quantidadeEmEstoque) {
-        this.quantidadeEmEstoque = quantidadeEmEstoque;
+    public void setEstoque(int estoque) {
+        this.estoque = estoque;
     }
 
     public String getCategoria() {
@@ -63,22 +75,30 @@ public class Produto {
         this.categoria = categoria;
     }
 
-    public class Livro extends Produto {
-        private String editora;
-        private String autor;
-
-        public Livro(int id, String nome, String descricao, double preco, int quantidadeEmEstoque, String categoria) {
-            super(id, nome, descricao, preco, quantidadeEmEstoque, categoria);
-            this.editora = editora;
-            this.autor = autor;
-        }
-
-        public String getEditora() {
+    public String getEditora() {
             return editora;
-        }
+    }
 
         public void setEditora(String editora) {
             this.editora = editora;
+    }
+
+    public void exibirInfo(){
+        System.out.println("Nome :" + nome);
+        System.out.println("idProduto :" + idProduto);
+    }
+
+
+    public class Livro extends Produto {
+        private String autor;
+
+        public Livro() {
+            this.autor = "";
+        }
+
+        public Livro(int idProduto, String nome, String descricao, double preco, int estoque, String categoria, String editora, String autor) {
+            super(idProduto, nome, descricao, preco, estoque, categoria, editora);
+            this.autor = autor;
         }
 
         public String getAutor() {
@@ -91,38 +111,23 @@ public class Produto {
     }
 
     public class Revista extends Produto {
-        private String editora;
-
-        public Revista(int id, String nome, String descricao, double preco, int quantidadeEmEstoque, String categoria) {
-            super(id, nome, descricao, preco, quantidadeEmEstoque, categoria);
-            this.editora = editora;
+        
+        public Revista(int idProduto, String nome, String descricao, double preco, int estoque, String categoria, String editora) {
+            super(idProduto, nome, descricao, preco, estoque, categoria, editora);
         }
 
-        public String getEditora() {
-            return editora;
-        }
-
-        public void setEditora(String editora) {
-            this.editora = editora;
-        }
     }
 
     public class historiaEmQuadrinhos extends Produto {
-        private String editora;
         private String autor;
 
-        public historiaEmQuadrinhos(int id, String nome, String descricao, double preco, int quantidadeEmEstoque, String categoria) {
-            super(id, nome, descricao, preco, quantidadeEmEstoque, categoria);
-            this.editora = editora;
+        public historiaEmQuadrinhos() {
+            this.autor = "";
+        }
+
+        public historiaEmQuadrinhos(int idProduto, String nome, String descricao, double preco, int estoque, String categoria, String editora, String autor) {
+            super(idProduto , nome, descricao, preco, estoque, categoria, editora);
             this.autor = autor;
-        }
-
-        public String getEditora() {
-            return editora;
-        }
-
-        public void setEditora(String editora) {
-            this.editora = editora;
         }
 
         public String getAutor() {
@@ -135,44 +140,44 @@ public class Produto {
     }
 
     public class Jornal extends Produto {
-        private String editora;
 
-        public Jornal(int id, String nome, String descricao, double preco, int quantidadeEmEstoque, String categoria) {
-            super(id, nome, descricao, preco, quantidadeEmEstoque, categoria);
-            this.editora = editora;
+        public Jornal(int idProduto, String nome, String descricao, double preco, int estoque, String categoria, String editora) {
+            super(idProduto, nome, descricao, preco, estoque, categoria, editora);
         }
 
-        public String getEditora() {
-            return editora;
-        }
-
-        public void setEditora(String editora) {
-            this.editora = editora;
-        }
     }
 
     public class Manga extends Produto {
-        private String editora;
+        private String autor;
 
-        public Manga(int id, String nome, String descricao, double preco, int quantidadeEmEstoque, String categoria) {
-            super(id, nome, descricao, preco, quantidadeEmEstoque, categoria);
-            this.editora = editora;
+        public Manga() {
+            this.autor = "";
         }
 
-        public String getEditora() {
-            return editora;
+        public Manga(int idProduto, String nome, String descricao, double preco, int estoque, String categoria, String editora, String autor) {
+            super(idProduto, nome, descricao, preco, estoque, categoria, editora);
+            this.autor = autor;
         }
 
-        public void setEditora(String editora) {
-            this.editora = editora;
+        public String getAutor() {
+            return autor;
         }
+
+        public void setAutor(String autor) {
+            this.autor = autor;
+        }
+
     }
 
     public class Curso extends Produto {
         private String autor;
 
-        public Curso(int id, String nome, String descricao, double preco, int quantidadeEmEstoque, String categoria) {
-            super(id, nome, descricao, preco, quantidadeEmEstoque, categoria);
+        public Curso() {
+            this.autor = "";
+        }
+
+        public Curso(int idProduto, String nome, String descricao, double preco, int estoque, String categoria, String editora, String autor) {
+            super(idProduto, nome, descricao, preco, estoque, categoria, editora);
             this.autor = autor;
         }
 
