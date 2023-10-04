@@ -1,14 +1,20 @@
-import java.util.Date;
+//import java.util.Date;
 
 public class Pessoa {
     public String nome;
-    public String cpf;
-    public Date dataDeNascimento;
+    public int cpf;
+    public String dataNasc;
 
-    public Pessoa(String nome, String cpf, Date dataDeNascimento) {
+    public Pessoa() {
+        this.nome = "";
+        this.cpf = 0;
+        this.dataNasc = "";
+    }
+
+    public Pessoa(String nome, int cpf, String dataNasc) {
         this.nome = nome;
         this.cpf = cpf;
-        this.dataDeNascimento = dataDeNascimento;
+        this.dataNasc = dataNasc;
     }
 
     public String getNome() {
@@ -19,28 +25,33 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public String getCpf() {
+    public int getCpf() {
         return cpf;
     }
 
-    public void setCpf(String cpf) {
+    public void setCpf(int cpf) {
         this.cpf = cpf;
     }
 
-    public Date getDataDeNascimento() {
-        return dataDeNascimento;
+    public String getDataNasc() {
+        return dataNasc;
     }
 
-    public void setDataDeNascimento(Date dataDeNascimento) {
-        this.dataDeNascimento = dataDeNascimento;
+    public void setDataNasc(String dataNasc) {
+        this.dataNasc = dataNasc;
     }
 
     public class Funcionario extends Pessoa {
         private int id;
         private String cargo;
 
-        public Funcionario (String nome, String cpf, Date dataDeNascimento) {
-            super (nome, cpf, dataDeNascimento);
+        public Funcionario() {
+            this.id = 0;
+            this.cargo = "";
+        }
+
+        public Funcionario (String nome, int cpf, String dataNasc, int id, String cargo){
+            super (nome, cpf, dataNasc);
             this.id = id;
             this.cargo = cargo;
         }
@@ -63,10 +74,9 @@ public class Pessoa {
     }
 
     public class Cliente extends Pessoa {
-        public Cliente (String nome, String cpf, Date dataDeNascimento) {
-            super(nome, cpf, dataDeNascimento);
+        public Cliente (String nome, int cpf, String dataNasc) {
+            super(nome, cpf, dataNasc);
         }
     }
 
 }
-
