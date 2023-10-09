@@ -76,18 +76,17 @@ public class Produto {
     }
 
     public String getEditora() {
-            return editora;
+        return editora;
     }
 
-        public void setEditora(String editora) {
-            this.editora = editora;
+    public void setEditora(String editora) {
+        this.editora = editora;
     }
 
-    public void exibirInfo(){
+    public void exibirInfo() {
         System.out.println("Nome :" + nome);
         System.out.println("idProduto :" + idProduto);
     }
-
 
     public class Livro extends Produto {
         private String autor;
