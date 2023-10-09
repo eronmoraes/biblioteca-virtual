@@ -46,7 +46,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 The MIT License (MIT)
 
-Copyright (c) [2023] [Andre Ferraz, Bruno Martins, Ereon Moraes, Vinicius Câmara]
+Copyright (c) [2023] [Andre Ferraz, Bruno Martins, Eron Moraes, Vinicius Câmara]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
