@@ -31,6 +31,7 @@ public class Funcionario extends Pessoa {
 
     @Override
     public void exibirInfo() {
+        System.out.println("Funcionário - Nome: " + getNomePes() + " CPF: " + getCpf() + " Data de Nascimento: " + getDataNasc() + " Id: " + id + " Cargo: " + cargo);
     }
 
 }
