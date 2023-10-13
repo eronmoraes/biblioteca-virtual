@@ -1,26 +1,26 @@
-public abstract class Pessoa {
-    public String nome;
+public class Pessoa {
+    public String nomePes;
     public int cpf;
     public String dataNasc;
 
     public Pessoa() {
-        this.nome = "";
+        this.nomePes = "";
         this.cpf = 0;
         this.dataNasc = "";
     }
 
-    public Pessoa(String nome, int cpf, String dataNasc) {
-        this.nome = nome;
+    public Pessoa(String nomePes, int cpf, String dataNasc) {
+        this.nomePes = nomePes;
         this.cpf = cpf;
         this.dataNasc = dataNasc;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNomePes() {
+        return nomePes;
     }
 
-    public void setNomeP(String nome) {
-        this.nome = nome;
+    public void setNomePes(String nomePes) {
+        this.nomePes = nomePes;
     }
 
     public int getCpf() {
@@ -39,6 +39,8 @@ public abstract class Pessoa {
         this.dataNasc = dataNasc;
     }
 
-  public abstract void exibirInfo();
+    public void exibirInfo() {
+        System.out.println("Pessoa - Nome: " + nomePes + " CPF: " + cpf + " Data de Nascimento: " + dataNasc);
+    }
 
 }
