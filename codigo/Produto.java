@@ -1,38 +1,35 @@
 public class Produto {
-    private int idProduto;
+    private int id;
     private String nome;
-    private String descricao;
     private double preco;
     private int estoque;
     private String categoria;
     private String editora;
 
     public Produto() {
-        this.idProduto = 0;
+        this.id = 0;
         this.nome = "";
-        this.descricao = "";
         this.preco = 0;
         this.estoque = 0;
         this.categoria = "";
         this.editora = "";
     }
 
-    public Produto(int idProduto, String nome, String descricao, double preco, int estoque, String categoria, String editora) {
-        this.idProduto = idProduto;
+    public Produto(int id, String nome, double preco, int estoque, String categoria, String editora) {
+        this.id = id;
         this.nome = nome;
-        this.descricao = descricao;
         this.preco = preco;
         this.estoque = estoque;
         this.categoria = categoria;
         this.editora = editora;
     }
 
-    public int getIdProduto() {
-        return idProduto;
+    public int getId() {
+        return id;
     }
 
-    public void setIdProduto(int idProduto) {
-        this.idProduto = idProduto;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -41,14 +38,6 @@ public class Produto {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
     }
 
     public double getPreco() {
@@ -84,8 +73,7 @@ public class Produto {
     }
 
     public void exibirInfo() {
-        System.out.println("Nome :" + nome);
-        System.out.println("idProduto :" + idProduto);
+        System.out.println("Produto - Nome: " + nome + " Id: " + id + " Preço: " + preco + " Estoque: " + estoque);
     }
 
 }
