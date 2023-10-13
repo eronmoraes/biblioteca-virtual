@@ -1,28 +1,38 @@
 class Main {
     public static void main(String[] args) {
 
-        Produto prod1 = new Produto(1, "teste", "teste", 50, 1, "teste", "teste");
+        Livro livro1 = new Livro(1, "Ladrão de Raio", 20.90, 5, "Aventura", "Rede", "Jeck");
 
-        System.out.println(prod1.getNome());
-        System.out.println(prod1.getIdProduto());
+        livro1.exibirInfo();
 
+        Revista revista1 = new Revista(2, "Veja", 10.90, 7, "", "");
 
-        Livro liv1 = new Livro(2, "Ladrão de Raio", "aaaaa", 20.99, 5, "Aventura", "Rede", "Jeck");
+        revista1.exibirInfo();
 
-        System.out.println(liv1.getNome());
-        System.out.println(liv1.getIdProduto());
+        HQ hq1 = new HQ(3, "Turma da Monica", 10.00, 10, "", "Mauricio de Sousa Editora", "Mauricio de Sousa");
 
+        hq1.exibirInfo();
 
-        Funcionario func1 = new Funcionario("Carlos", 123456, "12/02/1990", 1, "Gerente");
+        Jornal jornal1 = new Jornal(4, "Super", 2.50, 20, "", "Super");
 
-        System.out.println(func1.getNome());
-        System.out.println(func1.getId());
+        jornal1.exibirInfo();
 
-        Cliente clinte1 = new Cliente("Bruno", 123456, "27/12/2002");
+        Manga manga1 = new Manga(5, "Teste", 5.00, 6, "Aventura", "", "Jeck");
 
-        System.out.println(clinte1.getNome());
-        System.out.println(clinte1.getCpf());
+        manga1.exibirInfo();
+
+        Curso curso1 = new Curso(6, "Logica de Programação", 20.99, 5, "", "", "Mauricio");
+
+        curso1.exibirInfo();
+
+        Cliente clinte1 = new Cliente("Carlos", 654321, "10/05/2000");
+
         clinte1.exibirInfo();
-    
+
+        Funcionario func1 = new Funcionario("Bruno", 123456, "27/12/2002", 1, "Gerente");
+
+        func1.exibirInfo();
+
     }
+    
 }
