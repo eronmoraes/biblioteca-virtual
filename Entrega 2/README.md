@@ -21,3 +21,11 @@ E exibe na tela a mensagem de "Estoque Insuficiente"
 
 
 ### Cenário 3:
+
+Dado que o usuario irá comprar mais de um produto
+
+Quando o usuário seleciona os produtos a serem adicionados ao carrinho
+
+Então adiciona livro e HQ no carrinho
+
+E somento o HQ aparece no carrinho
