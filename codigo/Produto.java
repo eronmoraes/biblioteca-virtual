@@ -3,25 +3,16 @@ public class Produto {
     private String nome;
     private double preco;
     private int estoque;
+    private String autor;
     private String categoria;
-    private String editora;
 
-    public Produto() {
-        this.id = 0;
-        this.nome = "";
-        this.preco = 0;
-        this.estoque = 0;
-        this.categoria = "";
-        this.editora = "";
-    }
-
-    public Produto(int id, String nome, double preco, int estoque, String categoria, String editora) {
+    public Produto(int id, String nome, double preco, int estoque, String autor, String categoria) {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
         this.estoque = estoque;
+        this.autor = autor;
         this.categoria = categoria;
-        this.editora = editora;
     }
 
     public int getId() {
@@ -56,20 +47,20 @@ public class Produto {
         this.estoque = estoque;
     }
 
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
     public String getCategoria() {
         return categoria;
     }
 
     public void setCategoria(String categoria) {
         this.categoria = categoria;
-    }
-
-    public String getEditora() {
-        return editora;
-    }
-
-    public void setEditora(String editora) {
-        this.editora = editora;
     }
 
     public void exibirInfo() {
