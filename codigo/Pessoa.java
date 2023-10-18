@@ -3,12 +3,6 @@ public class Pessoa {
     public int cpf;
     public String dataNasc;
 
-    public Pessoa() {
-        this.nomePes = "";
-        this.cpf = 0;
-        this.dataNasc = "";
-    }
-
     public Pessoa(String nomePes, int cpf, String dataNasc) {
         this.nomePes = nomePes;
         this.cpf = cpf;
