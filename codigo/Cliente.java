@@ -6,7 +6,7 @@ public class Cliente extends Pessoa {
 
     @Override
     public void exibirInfo() {
-        System.out.println("Cliente - Nome: " + getNomePes() + " CPF: " + getCpf() + " Data de Nascimento: " + getDataNasc());
+        super.exibirInfo();
     }
 
 }
