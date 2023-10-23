@@ -1,11 +1,11 @@
 public class HQ extends Produto {
     
-    public HQ(int id, String nome, double preco, int estoque, String autor, String categoria) {
-        super(id, nome, preco, estoque, autor, categoria);
+    public HQ(int id, String nome, double preco, int estoque, String autor) {
+        super(id, nome, preco, estoque, autor);
     }
 
     public void exibirInfo() {
-        System.out.println("Livro - Nome: " + getNome() + " Id: " + getId() + " Preço: " + getPreco() + " Estoque: " + getEstoque() + " Autor: " + getAutor());
+        System.out.println("HQ - " + getNome() + "  Preço: " + getPreco() + "  Estoque: " + getEstoque());
     }
     
 }
