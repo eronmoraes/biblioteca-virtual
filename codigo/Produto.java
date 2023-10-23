@@ -4,15 +4,13 @@ public class Produto {
     private double preco;
     private int estoque;
     private String autor;
-    private String categoria;
 
-    public Produto(int id, String nome, double preco, int estoque, String autor, String categoria) {
+    public Produto(int id, String nome, double preco, int estoque, String autor) {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
         this.estoque = estoque;
         this.autor = autor;
-        this.categoria = categoria;
     }
 
     public int getId() {
@@ -53,14 +51,6 @@ public class Produto {
 
     public void setAutor(String autor) {
         this.autor = autor;
-    }
-
-    public String getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
     }
 
     public void exibirInfo() {
