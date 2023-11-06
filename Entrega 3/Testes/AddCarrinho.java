@@ -1,0 +1,19 @@
+import org.junit.Before;
+import org.junit.After;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
+@Test
+public void () {
+  
+  Livro livro1 = new Livro(1, "O Ladrão de raios", 47.68, 9, "Rick Riordan");
+  Livro livro2 = new Livro(2, "O Hobbit", 50.90, 8, "J.R.R. Tolkien");
+
+  CarrinhoDeCompras carrinho1 = new CarrinhoDeCompras();
+
+  carrinho1.adicionarProduto(livro1);
+  carrinho1.adicionarProduto(livro2);
+
+  assertEquals(2,carrinho1.getItens().size());
+}
