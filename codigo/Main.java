@@ -34,6 +34,7 @@ class Main {
 
         System.out.println("Insira seu CPF: ");
         int cpf1 = sc.nextInt();
+        sc.nextLine();
         cliente1.setCpf(cpf1);
         
         System.out.println("Insira sua data de nascimento: ");
@@ -115,7 +116,7 @@ class Main {
         System.out.println("\nPedido de " + cliente1.getNome());
         System.out.println("Itens no Carrinho de Compras: " + carrinho1.getItens().size());
         System.out.println("Total do Pedido: R$" + pedido1.calcularTotal());
-    
+        
     }
     
 }
