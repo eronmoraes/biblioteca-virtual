@@ -19,13 +19,14 @@ class Pedido {
       return produtos;
   }
 
-  public double calcularTotal() {
+  public String calcularTotal() {
       double total = 0;
       for (Produto produto : produtos) {
           total += produto.getPreco();
           produto.setEstoque(produto.getEstoque() - 1);
       }
-      return total;
+      String totalFormatado = String.format("%.2f", total);
+      return totalFormatado;
   }
 
 }
