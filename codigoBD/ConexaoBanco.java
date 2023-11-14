@@ -44,7 +44,8 @@ public class ConexaoBanco {
         +"Nome VARCHAR(120),"
         +"Preco DOUBLE PRECISION,"
         +"Estoque INTEGER,"
-        +"Autor VARCHAR(120)"
+        +"Autor VARCHAR(120),"
+        +"Categoria VARCHAR(120)"
         +");";
 
         try{
@@ -63,9 +64,12 @@ public class ConexaoBanco {
 
     public boolean CriarTabelaPessoas(){
         final String SQL = "CREATE TABLE IF NOT EXISTS Pessoas ("
-                +"CPF PRIMARY KEY,"
+                +"CPF VARCHAR(14) PRIMARY KEY,"
                 +"Nome VARCHAR(120),"
                 +"DataNascimento VARCHAR(120),"
+                +"Email VARCHAR(120),"
+                +"Endereco VARCHAR(120),"
+                +"Cargo VARCHAR(120)"
                 +");";
 
         try{
@@ -83,10 +87,10 @@ public class ConexaoBanco {
     }
     
     //metodo CRUD - inserir dados na tabela 
-    public boolean InserirProduto(String name, double price, int estoque, String autor){
+    public boolean InserirProduto(String name, double price, int estoque, String autor, String categoria){
         final String SQL = "INSERT INTO Produtos ("
-                + "nome,preco,estoque,autor)"
-                + "VALUES (?,?,?,?)";
+                + "nome,preco,estoque,autor,categoria)"
+                + "VALUES (?,?,?,?,?)";
 
         try{    
             this.Conectar();
@@ -95,9 +99,10 @@ public class ConexaoBanco {
             pstmt.setDouble(2, price);
             pstmt.setInt(3, estoque);
             pstmt.setString(4, autor);
+            pstmt.setString(5, categoria);
             pstmt.execute();
             pstmt.close();
-            System.out.println("Resitro inserido com Sucesso!");
+            System.out.println("Registro inserido com Sucesso!");
             this.Desconectar();
             return true;
         }catch (SQLException e) {
@@ -106,20 +111,23 @@ public class ConexaoBanco {
         }
     }
 
-    public boolean InserirPessoa(int cpf, String name, String dataNascimento, String email){
+    public boolean InserirPessoa(String cpf, String name, String dataNascimento, String email, String endereco, String cargo){
         final String SQL = "INSERT INTO Pessoas ("
-                + "cpf,nome,datanascimento)"
-                + "VALUES (?,?,?)";
+                + "cpf,nome,datanascimento,email,endereco,cargo)"
+                + "VALUES (?,?,?,?,?,?)";
 
         try{
             this.Conectar();
             PreparedStatement pstmt = this.conn.prepareStatement(SQL);
-            pstmt.setInt(1, cpf);
+            pstmt.setString(1, cpf);
             pstmt.setString(2, name);
             pstmt.setString(3, dataNascimento);
+            pstmt.setString(4, email);
+            pstmt.setString(5, endereco);
+            pstmt.setString(6, cargo);
             pstmt.execute();
             pstmt.close();
-            System.out.println("Resitro inserido com Sucesso!");
+            System.out.println("Registro inserido com Sucesso!");
             this.Desconectar();
             return true;
         }catch (SQLException e) {
@@ -129,12 +137,13 @@ public class ConexaoBanco {
     }
     
     //método CRUD - Atualizar dados na tabela
-    public boolean AtualizarProduto(int idprod, String name, double price, int estoque, String autor){
+    public boolean AtualizarProduto(int idprod, String name, double price, int estoque, String autor, String categoria){
         final String SQL = "UPDATE Produtos SET "
-                + "nome=?, "
-                + "preco=? "
-                + "estoque=? "
-                + "autor=? "
+                + "nome=?,"
+                + "preco=?,"
+                + "estoque=?,"
+                + "autor=?,"
+                + "categoria=?"
                 + "WHERE id=?";
         try{
             this.Conectar();
@@ -143,7 +152,8 @@ public class ConexaoBanco {
             pstmt.setDouble(2, price);
             pstmt.setInt(3, estoque);
             pstmt.setString(4, autor);
-            pstmt.setInt(5, idprod);
+            pstmt.setString(5, categoria);
+            pstmt.setInt(6, idprod);
             pstmt.execute();
             pstmt.close();
             System.out.println("Registro atualizado com sucesso!");
@@ -155,18 +165,24 @@ public class ConexaoBanco {
         }
     }
 
-    public boolean AtualizarPessoa(int cpf, String name, String dataNascimento, String email){
+    public boolean AtualizarPessoa(String cpf, String name, String dataNascimento, String email, String endereco, String cargo){
         final String SQL = "UPDATE Pessoas SET "
-                + "cpf=?, "
-                + "nome=? "
-                + "datanascimento=? "
+                + "cpf=?,"
+                + "nome=?,"
+                + "datanascimento=?,"
+                + "email=?,"
+                + "endereco=?,"
+                + "cargo=?"
                 + "WHERE cpf=?";
         try{
             this.Conectar();
             PreparedStatement pstmt = this.conn.prepareStatement(SQL);
             pstmt.setString(1, name);
             pstmt.setString(2, dataNascimento);
-            pstmt.setInt(3, cpf);
+            pstmt.setString(3, email);
+            pstmt.setString(3, endereco);
+            pstmt.setString(3, cargo);
+            pstmt.setString(3, cpf);
             pstmt.execute();
             pstmt.close();
             System.out.println("Registro atualizado com sucesso!");
@@ -213,7 +229,7 @@ public class ConexaoBanco {
     
     //metodo CRUD consultar dados na tabela
     public ResultSet ConsultarProduto(){
-        final String SQL = "SELECT id, nome, preco, estoque, autor FROM Produtos";
+        final String SQL = "SELECT id, nome, preco, estoque, autor, categoria FROM Produtos";
         try{
             this.Conectar();
             PreparedStatement pstmt = this.conn.prepareStatement(SQL);
@@ -227,7 +243,7 @@ public class ConexaoBanco {
     }
 
     public ResultSet ConsultarPessoa(){
-        final String SQL = "SELECT cpf, nome, datanascimento FROM Pessoas";
+        final String SQL = "SELECT cpf, nome, datanascimento, email, endereco, cargo FROM Pessoas";
         try{
             this.Conectar();
             PreparedStatement pstmt = this.conn.prepareStatement(SQL);

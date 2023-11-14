@@ -1,9 +1,9 @@
 public class Pessoa {
     public String nome;
-    public int cpf;
+    public String cpf;
     public String dataNascimento;
 
-    public Pessoa(String nome, int cpf, String dataNascimento) {
+    public Pessoa(String nome, String cpf, String dataNascimento) {
         this.nome = nome;
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
@@ -17,11 +17,11 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public int getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(int cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
