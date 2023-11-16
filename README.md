@@ -33,6 +33,7 @@ Para começar, você vai precisar acessar o site <https://bibliotecavirtual.com.
 As seguintes ferramentas foram usadas na construção do projeto:
 
 - Java
+- PostgreSQL
 
 ### Autores
 
