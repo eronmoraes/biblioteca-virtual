@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class CarrinhoDeCompras {
+class Carrinho {
   private List<Produto> itens = new ArrayList<>();
 
   public void adicionarProduto(Produto produto) {
@@ -15,5 +15,5 @@ class CarrinhoDeCompras {
   public List<Produto> getItens() {
       return itens;
   }
-  
+
 }
