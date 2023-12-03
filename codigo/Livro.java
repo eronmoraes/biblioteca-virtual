@@ -7,5 +7,5 @@ public class Livro extends Produto {
     public void exibirInfo() {
         System.out.println("Livro - " + getNome() + "  Preço: " + getPreco() + "  Estoque: " + getEstoque());
     }
-    
+
 }
