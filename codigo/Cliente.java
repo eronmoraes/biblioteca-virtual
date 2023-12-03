@@ -1,12 +1,12 @@
 public class Cliente {
     public String nome;
     public int cpf;
-    public String dataNasc;
+    public String email;
 
-    public Cliente(String nome, int cpf, String dataNasc) {
+    public Cliente(String nome, int cpf, String email) {
         this.nome = nome;
         this.cpf = cpf;
-        this.dataNasc = dataNasc;
+        this.email = email;
     }
 
     public String getNome() {
@@ -25,16 +25,16 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-    public String getDataNasc() {
-        return dataNasc;
+    public String getEmail() {
+        return email;
     }
 
-    public void setDataNasc(String dataNasc) {
-        this.dataNasc = dataNasc;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public void exibirInfo() {
-        System.out.println("Pessoa - Nome: " + nome + " CPF: " + cpf + " Data de Nascimento: " + dataNasc);
+        System.out.println("Pessoa - Nome: " + nome + " CPF: " + cpf + " Email: " + email);
     }
 
 }
