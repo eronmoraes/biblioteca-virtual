@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
 
 @Test
-public void () {
+public void EditarProduto() {
 
   Livro livro1 = new Livro(1, "O Ladrão de raios", 47.68, 9, "Rick Riordan");
 
