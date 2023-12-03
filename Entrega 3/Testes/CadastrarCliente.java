@@ -5,12 +5,12 @@ import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
 
 @Test
-public void () {
+public void CadastrarCliente() {
 
-  Cliente cliente1 = new Cliente("Bruno", 123, "00/00/0000");
+  Cliente cliente1 = new Cliente("Bruno", 123, "bruno@gmail.com");
 
   assertEquals("Bruno",cliente1.getNome());
   assertEquals(123,cliente1.getCpf());
-  assertEquals("00/00/0000",cliente1.getDataNasc());
+  assertEquals("bruno@gmail.com",cliente1.getEmail());
 
 }
