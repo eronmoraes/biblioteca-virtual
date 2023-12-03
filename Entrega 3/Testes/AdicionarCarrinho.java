@@ -5,12 +5,12 @@ import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
 
 @Test
-public void () {
+public void AdicionarCarrinho() {
   
   Livro livro1 = new Livro(1, "O Ladrão de raios", 47.68, 9, "Rick Riordan");
   Livro livro2 = new Livro(2, "O Hobbit", 50.90, 8, "J.R.R. Tolkien");
 
-  CarrinhoDeCompras carrinho1 = new CarrinhoDeCompras();
+  Carrinho carrinho1 = new Carrinho();
 
   carrinho1.adicionarProduto(livro1);
   carrinho1.adicionarProduto(livro2);
