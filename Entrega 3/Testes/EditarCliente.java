@@ -5,9 +5,9 @@ import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
 
 @Test
-public void () {
+public void EditarCliente() {
 
-  Cliente cliente1 = new Cliente("Bruno", 123, "00/00/0000");
+  Cliente cliente1 = new Cliente("Bruno", 123, "bruno@gmail.com");
 
   cliente1.setNome("Vinicius");
   
