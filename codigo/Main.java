@@ -26,6 +26,7 @@ class Main {
 
         Cliente cliente1 = new Cliente(" ", 0, "00/00/0000");
 
+      
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Insira seu nome: ");
@@ -36,11 +37,11 @@ class Main {
         int cpf1 = sc.nextInt();
         sc.nextLine();
         cliente1.setCpf(cpf1);
-        
-        System.out.println("Insira sua data de nascimento: ");
-        String dn1 = sc.nextLine();
-        cliente1.setDataNasc(dn1);
-        
+
+        System.out.println("Insira seu Email: ");
+        String email1 = sc.nextLine();
+        cliente1.setEmail(email1);
+
 
         System.out.println("\nEscolha seus produtos: ");
         System.out.print("1. "); livro1.exibirInfo();
@@ -53,10 +54,10 @@ class Main {
         System.out.print("8. "); curso2.exibirInfo();
         System.out.print("9. "); revista1.exibirInfo();
         System.out.print("10. "); jornal1.exibirInfo();
-        
 
-        CarrinhoDeCompras carrinho1 = new CarrinhoDeCompras();
-        Pedido pedido1 = new Pedido(1, cliente1);
+
+        Carrinho carrinho1 = new Carrinho();
+        Pedido pedido1 = new Pedido();
 
         while (true) {
             System.out.print("Escolha o produto (1/2/3...) ou digite '0' para finalizar: ");
@@ -110,13 +111,13 @@ class Main {
                     System.out.println("Escolha inválida. Tente novamente.");
             }
         }
-        
+
         sc.close();
-    
+
         System.out.println("\nPedido de " + cliente1.getNome());
         System.out.println("Itens no Carrinho de Compras: " + carrinho1.getItens().size());
         System.out.println("Total do Pedido: R$" + pedido1.calcularTotal());
         
     }
-    
+
 }
