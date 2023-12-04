@@ -1,3 +1,7 @@
+/**
+ * Classe que representa o produto Jornal.
+ */
+
 public class Jornal extends Produto {
 
     public Jornal(int id, String nome, double preco, int estoque, String autor) {

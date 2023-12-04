@@ -1,6 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Classe que representa o pedido do cliente.
+ * @return Retorna o total dos produtos adicionados ao pedido.
+ */
+
 class Pedido {
   private List<Produto> produtos = new ArrayList<>();
 

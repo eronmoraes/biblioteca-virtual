@@ -1,3 +1,7 @@
+/**
+ * Classe que representa o cliente.
+ */
+
 public class Cliente {
     public String nome;
     public int cpf;

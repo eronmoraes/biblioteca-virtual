@@ -1,3 +1,7 @@
+/**
+ * Classe que representa o produto Revista.
+ */
+
 public class Revista extends Produto {
 
     public Revista(int id, String nome, double preco, int estoque, String autor) {

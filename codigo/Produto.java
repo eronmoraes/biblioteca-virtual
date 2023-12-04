@@ -1,3 +1,7 @@
+/**
+ * Classe que representa os produtos.
+ */
+
 public class Produto {
     private int id;
     private String nome;

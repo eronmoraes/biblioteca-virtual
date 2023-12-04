@@ -1,7 +1,12 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class Carrinho {
+/**
+ * Classe que representa o carrinho do cliente.
+ * @return Retorna os itens do carrinho do cliente.
+ */
+
+public class Carrinho {
   private List<Produto> itens = new ArrayList<>();
 
   public void adicionarProduto(Produto produto) {
