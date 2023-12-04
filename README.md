@@ -19,11 +19,11 @@ Tabela de conteúdos
 
 ### Status
 
-🚀 Em desenvolvimento...
+Finalizado.
 
 ### Pré-requisitos
 
-Para começar, você vai precisar acessar o site <https://bibliotecavirtual.com.br> em seu navegador.
+Basta você baixar o projeto e rodar o código que se encontra na pasta "codigo" em sua máquina.
 
 ### 🛠 Tecnologias
 
