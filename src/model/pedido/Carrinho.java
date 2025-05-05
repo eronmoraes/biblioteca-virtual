@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Classe que representa o carrinho do model.model.produtos.cliente.
- * @return Retorna os itens do carrinho do model.model.produtos.cliente.
+ * Classe que representa o carrinho do cliente.
+ * @return Retorna os itens do carrinho do cliente.
  */
 
 public class Carrinho {

@@ -10,21 +10,21 @@ class Main {
 
         //Produtos //
 
-        Livro livro1 = new Livro(1, "O Ladrão de raios", 47.68, 9, "Rick Riordan");
-        Livro livro2 = new Livro(2, "O Hobbit", 50.90, 8, "J.R.R. Tolkien");
+        Livro livro1 = new Livro(1, "O Ladrão de raios", 47.68, 9, "Rick Riordan", "Livro");
+        Livro livro2 = new Livro(2, "O Hobbit", 50.90, 8, "J.R.R. Tolkien", "Livro");
 
-        HQ hq1 = new HQ(3, "Homem Aranha", 10.47, 15, "Stan Lee");
-        HQ hq2 = new HQ(4, "Turma da Mônica", 7.30, 12, "Mauricio de Sousa");
+        HQ hq1 = new HQ(3, "Homem Aranha", 10.47, 15, "Stan Lee", "HQ");
+        HQ hq2 = new HQ(4, "Turma da Mônica", 7.30, 12, "Mauricio de Sousa", "HQ");
 
-        Manga manga1 = new Manga(5, "One Pice", 13.90, 6, "Eiichiro Oda");
-        Manga manga2 = new Manga(6, "Naruto", 11.50, 6, "Masashi Kishimoto");
+        Manga manga1 = new Manga(5, "One Pice", 13.90, 6, "Eiichiro Oda", "Manga");
+        Manga manga2 = new Manga(6, "Naruto", 11.50, 6, "Masashi Kishimoto", "Manga");
 
-        Curso curso1 = new Curso(7, "Logica de Programação", 39.99, 10, "Mauricio");
-        Curso curso2 = new Curso(8, "Excel", 19.99, 5, "Juliana");
+        Curso curso1 = new Curso(7, "Logica de Programação", 39.99, 10, "Mauricio", "Curso");
+        Curso curso2 = new Curso(8, "Excel", 19.99, 5, "Juliana", "Curso");
 
-        Revista revista1 = new Revista(9, "Veja", 8.97,5,"André Lopes");
+        Revista revista1 = new Revista(9, "Veja", 8.97,5,"André Lopes", "Revista");
 
-        Jornal jornal1 = new Jornal(10, "O Tempo", 1.50, 20,"Laura Medioli");
+        Jornal jornal1 = new Jornal(10, "O Tempo", 1.50, 20,"Laura Medioli", "Jornal");
 
         //Clientes //
 

@@ -1,7 +1,7 @@
 package model.cliente;
 
 /**
- * Classe que representa o model.model.produtos.cliente.
+ * Classe que representa o cliente.
  */
 
 public class Cliente {

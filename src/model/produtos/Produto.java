@@ -11,7 +11,7 @@ public class Produto {
     private int estoque;
     private String autor;
 
-    public Produto(int id, String nome, double preco, int estoque, String autor) {
+    public Produto(int id, String nome, double preco, int estoque, String autor, String categoria) {
         this.id = id;
         this.nome = nome;
         this.preco = preco;

@@ -1,3 +1,5 @@
+package src.pessoa;
+
 public class Cliente extends Pessoa {
     private String email;
     private String endereco;

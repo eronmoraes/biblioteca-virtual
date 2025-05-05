@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Classe que representa o model.model.produtos.pedido do model.model.produtos.cliente.
- * @return Retorna o total dos model.model.produtos adicionados ao model.model.produtos.pedido.
+ * Classe que representa o pedido do cliente.
+ * @return Retorna o total dos produtos adicionados ao pedido.
  */
 
 public class Pedido {

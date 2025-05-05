@@ -6,8 +6,8 @@ package model.produtos;
 
 public class Livro extends Produto {
 
-    public Livro(int id, String nome, double preco, int estoque, String autor) {
-        super(id, nome, preco, estoque, autor);
+    public Livro(int id, String nome, double preco, int estoque, String autor, String categoria) {
+        super(id, nome, preco, estoque, autor, categoria);
     }
 
     public void exibirInfo() {
