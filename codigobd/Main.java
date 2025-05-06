@@ -3,7 +3,7 @@ import src.config.ConexaoBanco;
 import java.sql.SQLException;
 import java.sql.ResultSet;
 
-class Mainbd {
+class Main {
     public static void main(String[] args) {
 
         ConexaoBanco bd01 = new ConexaoBanco();
