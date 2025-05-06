@@ -53,8 +53,8 @@ Linguagem de Programação: Java
 Banco de Dados: PostgreSQL
 
 Ferramentas de Desenvolvimento:
-- IDE compatível com Java (ex: IntelliJ, Eclipse)
-- Sistema de controle de versão (Git)
+- IntelliJ
+- Git
 
 ## 👥 Autores
 
