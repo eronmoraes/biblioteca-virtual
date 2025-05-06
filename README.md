@@ -1,12 +1,21 @@
 # Biblioteca Virtual
 
 ### Descrição
-A Biblioteca Virtual é uma plataforma online que oferece acesso a uma vasta coleção de livros digitais de diversos gêneros e autores. Nosso objetivo é tornar a leitura mais acessível e conveniente, permitindo que os amantes da literatura desfrutem de uma ampla variedade de obras literárias.
+A Biblioteca Virtual é uma plataforma digital desenvolvida para oferecer acesso a uma ampla coleção de livros digitais, abrangendo diversos gêneros e autores. Nosso objetivo é democratizar o acesso à leitura, proporcionando uma experiência conveniente e acessível para entusiastas da literatura.
 
-Com uma interface simples e intuitiva, os usuários podem explorar nossa extensa coleção de revistas, histórias em quadrinhos, mangás e livros que abrange desde clássicos da literatura até obras contemporâneas. Oferecemos opções de leitura online e a possibilidade de fazer a compra dos livros, permitindo que os leitores escolham a maneira que preferem desfrutar de suas leituras.
+Com uma interface intuitiva e de fácil navegação, os usuários podem explorar uma extensa biblioteca que inclui:
+- Livros digitais
+- Revistas
+- Histórias em quadrinhos
+- Mangás
+- Cursos
 
-Tabela de conteúdos
-=================
+A plataforma oferece duas modalidades de consumo:
+- Leitura online
+- Compra de livros
+
+## 📋 Tabela de Conteúdos
+
 <!--ts-->
    * [Descrição](#Descrição)
    * [Tabela de Conteudo](#tabela-de-conteudo)
@@ -14,27 +23,38 @@ Tabela de conteúdos
    * [Pre Requisitos](#pre-requisitos)
    * [Tecnologias](#tecnologias)
    * [Autores](#Autores)
-   * [Lincença](#Lincença)
 <!--te-->
 
-### Status
+## 🚀 Status
+✅ Concluído – O projeto está finalizado e funcional.
 
-Finalizado.
+## ⚙️ Pré-requisitos
+Para executar este projeto localmente, siga os passos abaixo:
 
-### Pré-requisitos
+Clone o repositório:
+git clone https://github.com/eronmoraes/biblioteca-virtual
 
-Basta você baixar o projeto e rodar o código que se encontra na pasta "codigo" em sua máquina.
+Acesse a pasta do projeto:
+cd biblioteca-virtual
 
-### 🛠 Tecnologias
+Execute o código:
+- Navegue até a pasta codigo e execute o programa em seu ambiente de desenvolvimento Java.
 
-As seguintes ferramentas foram usadas na construção do projeto:
+### Atenção!
+Para evitar conflitos de compilação:
+- Se estiver usando a versão com banco de dados, exclua o código da versão sem banco de dados.
+- Se estiver usando a versão sem banco de dados, exclua o código da versão com banco de dados.
 
-- Java
-- PostgreSQL
+Utilize apenas uma das versões (com ou sem banco de dados) por vez, removendo o código não utilizado.
 
-### Autores
+## 🛠 Tecnologias Utilizadas
+Linguagem de Programação: Java
+Banco de Dados: PostgreSQL
+Ferramentas de Desenvolvimento:
+- IDE compatível com Java (ex: IntelliJ, Eclipse)
+- Sistema de controle de versão (Git)
 
-- [Andre Ferraz](https://github.com/AndreFerrazzzz)
-- [Bruno Martins](https://github.com/Bruno-Mrs)
-- [Eron Moraes](https://github.com/eronmoraes)
-- [Vinicius Câmara](https://github.com/VinicinCamara)
+## 👥 Autores
+
+| [<img src="https://github.com/AndreFerrazzzz.png" width=100><br>André Ferraz](https://github.com/AndreFerrazzzz) | [<img src="https://github.com/Bruno-Mrs.png" width=100><br>Bruno Martins](https://github.com/Bruno-Mrs) | [<img src="https://github.com/eronmoraes.png" width=100><br>Eron Moraes](https://github.com/eronmoraes) | [<img src="https://github.com/VinicinCamara.png" width=100><br>Vinícius Câmara](https://github.com/VinicinCamara) |
+|:----------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------:|
