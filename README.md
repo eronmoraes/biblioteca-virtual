@@ -17,12 +17,12 @@ A plataforma oferece duas modalidades de consumo:
 ## 📋 Tabela de Conteúdos
 
 <!--ts-->
-   * [Descrição](#Descrição)
-   * [Tabela de Conteudo](#📋-Tabela-de-Conteúdos)
-   * [Status](#🚀-Status)
-   * [Pre Requisitos](#⚙-Pré-requisitos)
-   * [Tecnologias](#🛠-Tecnologias-Utilizadas)
-   * [Autores](#👥-Autores)
+   * [Descrição](#descrição)
+   * [Tabela de Conteúdos](#tabela-de-conteúdos)
+   * [Status do Projeto](#status)
+   * [Pré-requisitos](#pré-requisitos)
+   * [Tecnologias Utilizadas](#tecnologias-utilizadas)
+   * [Autores](#autores)
 <!--te-->
 
 ## 🚀 Status
