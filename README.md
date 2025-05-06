@@ -18,11 +18,11 @@ A plataforma oferece duas modalidades de consumo:
 
 <!--ts-->
    * [Descrição](#Descrição)
-   * [Tabela de Conteudo](#tabela-de-conteudo)
-   * [Status](#Status)
-   * [Pre Requisitos](#pre-requisitos)
-   * [Tecnologias](#tecnologias)
-   * [Autores](#Autores)
+   * [Tabela de Conteudo](#📋-Tabela-de-Conteúdos)
+   * [Status](#🚀-Status)
+   * [Pre Requisitos](#⚙-Pré-requisitos)
+   * [Tecnologias](#🛠-Tecnologias-Utilizadas)
+   * [Autores](#👥-Autores)
 <!--te-->
 
 ## 🚀 Status
