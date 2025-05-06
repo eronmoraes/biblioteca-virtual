@@ -14,7 +14,7 @@ A plataforma oferece duas modalidades de consumo:
 - Leitura online
 - Compra de livros
 
-## 📋 Tabela de Conteúdos
+### 📋 Tabela de Conteúdos
 
 <!--ts-->
    * [Descrição](#descrição)
@@ -25,10 +25,10 @@ A plataforma oferece duas modalidades de consumo:
    * [Autores](#autores)
 <!--te-->
 
-## 🚀 Status
+### 🚀 Status
 ✅ Concluído – O projeto está finalizado e funcional.
 
-## ⚙️ Pré-requisitos
+### ⚙️ Pré-requisitos
 Para executar este projeto localmente, siga os passos abaixo:
 
 Clone o repositório:
@@ -47,7 +47,7 @@ Para evitar conflitos de compilação:
 
 Utilize apenas uma das versões (com ou sem banco de dados) por vez, removendo o código não utilizado.
 
-## 🛠 Tecnologias Utilizadas
+### 🛠 Tecnologias Utilizadas
 Linguagem de Programação: Java
 
 Banco de Dados: PostgreSQL
@@ -56,7 +56,7 @@ Ferramentas de Desenvolvimento:
 - IDE compatível com Java (ex: IntelliJ, Eclipse)
 - Sistema de controle de versão (Git)
 
-## 👥 Autores
+### 👥 Autores
 
 | [<img src="https://github.com/AndreFerrazzzz.png" width=100><br>André Ferraz](https://github.com/AndreFerrazzzz) | [<img src="https://github.com/Bruno-Mrs.png" width=100><br>Bruno Martins](https://github.com/Bruno-Mrs) | [<img src="https://github.com/eronmoraes.png" width=100><br>Eron Moraes](https://github.com/eronmoraes) | [<img src="https://github.com/VinicinCamara.png" width=100><br>Vinícius Câmara](https://github.com/VinicinCamara) |
 |:----------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------:|
